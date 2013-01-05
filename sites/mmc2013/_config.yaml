@@ -1,7 +1,7 @@
-title: demo site
+title: 
 description: a demo site
 theme_base: http://localhost:6544/themes/bootstrap/
 theme_default: default.html
 theme: home.html
-order: [index.rst, tour, blog, about.rst, about-ru.rst]
+order: [index.html, about.rst]
 hide: []

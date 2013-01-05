@@ -1,0 +1,30 @@
+--- default.html	2013-01-27 09:59:27.011601405 +0400
++++ home.html	2013-01-27 09:59:27.011601405 +0400
+@@ -52,26 +52,10 @@
+ $upper
+ 
+ <div class="container">
+-
+-    <!-- Docs nav
+-    ================================================== -->
+-    <div class="row">
+-      <div class="span3 bs-docs-sidebar">
+-	$left
+-      </div>
+-
+-      <div class="span9">
+-	$content
+-      </div>
+-
+-   </div>
+-
++     $content
+ </div>
+ 
+ 
+-
+-    <!-- Footer
+-    ================================================== -->
+     <footer class="footer">
+       <div class="container">
+         <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>

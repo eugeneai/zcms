@@ -27,7 +27,7 @@ def getDisplayTime(input_time, show_mode='localdate'):
     """
     if not input_time:
         return ''
-    
+
     today = datetime.now()
     time_date = datetime(input_time.year, input_time.month, input_time.day)
     year, month, day = today.year, today.month, today.day
@@ -143,9 +143,11 @@ def zcms_template(func):
         'upper': context.render_slots('upper', request),
         }
 
-        theme_base = site.metadata.get('theme_base', 'http://localhost:6543/themes/bootstrap/')
+        #theme_base = site.metadata.get('theme_base', 'http://localhost:6544/themes/bootstrap/')
+        theme_base = site.metadata.get('theme_base', 'file:/home/sapling/zcms/themes/bootstrap/')
         theme_default = site.metadata.get('theme_default', 'default.html')
         theme = context.metadata.get('theme', theme_default)
+        # print theme_base, theme
         template = get_theme_template(theme_base + theme)
         output = template.substitute(kw).encode('utf8')
         return Response(output, headerlist=[
